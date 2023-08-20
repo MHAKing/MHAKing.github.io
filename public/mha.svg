@@ -1,0 +1,5 @@
+<!-- sample rectangle -->
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect xmlns="http://www.w3.org/2000/svg" width="200" height="200" rx="20" fill="#ffffff"/>
+  <text x="0" y="125" font-size="5.5em" fill="black">MHA</text>
+ </svg>

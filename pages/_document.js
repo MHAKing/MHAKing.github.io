@@ -23,7 +23,8 @@ export default function Document() {
         <link rel="stylesheet" href="assets/css/plugins.css" />
         <link rel="stylesheet" href="assets/css/custom.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        <title>Tokyo</title>
+        <title>About Hassan</title>
+        <link rel="icon" type="image/svg+xml" href="mha.svg"></link>
       </Head>
       <body>
         <Main />

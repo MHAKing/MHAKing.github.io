@@ -232,7 +232,7 @@ const Portfolio = () => {
                       className="popup_info"
                       href="#"
                       onClick={() => {
-                        setPortfolioDetailsModal(detailData[1]);
+                        setPortfolioDetailsModal(detailData[3]);
                         modalToggle(true);
                       }}
                     >
@@ -261,7 +261,7 @@ const Portfolio = () => {
                       className="popup_info"
                       href="#"
                       onClick={() => {
-                        setPortfolioDetailsModal(detailData[1]);
+                        setPortfolioDetailsModal(detailData[4]);
                         modalToggle(true);
                       }}
                     >
@@ -290,7 +290,7 @@ const Portfolio = () => {
                       className="popup_info"
                       href="#"
                       onClick={() => {
-                        setPortfolioDetailsModal(detailData[1]);
+                        setPortfolioDetailsModal(detailData[5]);
                         modalToggle(true);
                       }}
                     >

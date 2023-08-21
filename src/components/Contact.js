@@ -11,8 +11,8 @@ const Contact = () => {
             <div className="title_flex w-full h-auto clear-both flex justify-between items-end">
               <SectionTitle pageName={"Contact"} title={"Get in Touch"} />
             </div>
-            <div>linkedin: <a target="_blank" href='https://www.linkedin.com/in/muhammad-hassan-ali-24216a18b/' rel="noopener noreferrer">https://www.linkedin.com/in/muhammad-hassan-ali-24216a18b/</a></div>
-            <div>email: <a onClick={(e) => {window.location.href ='mailto:mha.m.hassan.ali@outlook.com';}}>mha.m.hassan.ali@outlook.com</a></div>
+            <div><b style={{fontSize: "large"}}>Linkedin:</b> <a style={{fontSize: "large"}} target="_blank" href='https://www.linkedin.com/in/muhammad-hassan-ali-24216a18b/' rel="noopener noreferrer">https://www.linkedin.com/in/muhammad-hassan-ali-24216a18b/</a></div>
+            <div><b style={{fontSize: "large"}}>Email:</b> <a style={{fontSize: "large"}} onClick={(e) => {window.location.href ='mailto:mha.m.hassan.ali@outlook.com';}}>mha.m.hassan.ali@outlook.com</a></div>
           </div>
           {/* <Map /> */}
           <ContactForm />

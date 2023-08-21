@@ -14,7 +14,7 @@ const Contact = () => {
             <div>linkedin: <a target="_blank" href='https://www.linkedin.com/in/muhammad-hassan-ali-24216a18b/' rel="noopener noreferrer">https://www.linkedin.com/in/muhammad-hassan-ali-24216a18b/</a></div>
             <div>email: <a onClick={(e) => {window.location.href ='mailto:mha.m.hassan.ali@outlook.com';}}>mha.m.hassan.ali@outlook.com</a></div>
           </div>
-          <Map />
+          {/* <Map /> */}
           <ContactForm />
         </div>
       </div>

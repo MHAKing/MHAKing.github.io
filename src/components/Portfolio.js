@@ -16,7 +16,7 @@ const detailData = [
       `> Voting or Surveys`,
       `> Analytical reports & lot more`,
     ],
-    website:"https://www.activ8games.com/"
+    website:"https://www.activ8games.com/",
   },
   {
     id: 2,
@@ -134,179 +134,37 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="list_wrapper w-full h-auto clear-both float-left">
-            <ul className="portfolio_list gallery_zoom ml-[-40px] list-none">              
-              <li className="detail mb-[40px] float-left w-1/3 pl-[40px] item__">
-                <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
+            <ul className="portfolio_list gallery_zoom ml-[-40px] list-none">
+            {detailData.map((data)=>{
+            return <li className="detail mb-[40px] float-left w-1/3 pl-[40px] item__">
+            <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
+              <div
+                className="entry tokyo_tm_portfolio_animation_wrap"
+                data-title={data.title}
+                data-category="Detail"
+              >
+                <a
+                  className="popup_info"
+                  href="#"
+                  onClick={() => {
+                    setPortfolioDetailsModal(data);
+                    modalToggle(true);
+                  }}
+                >
+                  <img
+                    className="opacity-0 min-w-full"
+                    src={data.thumbnail}
+                    alt="image"
+                  />
                   <div
-                    className="entry tokyo_tm_portfolio_animation_wrap"
-                    data-title="Gage"
-                    data-category="Detail"
-                  >
-                    <a
-                      className="popup_info"
-                      href="#"
-                      onClick={() => {
-                        setPortfolioDetailsModal(detailData[0]);
-                        modalToggle(true);
-                      }}
-                    >
-                      <img
-                        className="opacity-0 min-w-full"
-                        src="gage.png"
-                        alt="image"
-                      />
-                      <div
-                        className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="gage.png"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="detail mb-[40px] float-left w-1/3 pl-[40px] item__">
-                <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                  <div
-                    className="entry tokyo_tm_portfolio_animation_wrap"
-                    data-title="Empire"
-                    data-category="Detail"
-                  >
-                    <a
-                      className="popup_info"
-                      href="#"
-                      onClick={() => {
-                        setPortfolioDetailsModal(detailData[1]);
-                        modalToggle(true);
-                      }}
-                    >
-                      <img
-                        className="opacity-0 min-w-full"
-                        src="empire.png"
-                        alt="image"
-                      />
-                      <div
-                        className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="empire.png"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-              
-              <li className="detail mb-[40px] float-left w-1/3 pl-[40px] item__">
-                <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                  <div
-                    className="entry tokyo_tm_portfolio_animation_wrap"
-                    data-title="Advance"
-                    data-category="Detail"
-                  >
-                    <a
-                      className="popup_info"
-                      href="#"
-                      onClick={() => {
-                        setPortfolioDetailsModal(detailData[2]);
-                        modalToggle(true);
-                      }}
-                    >
-                      <img
-                        className="opacity-0 min-w-full"
-                        src="advance.png"
-                        alt="image"
-                      />
-                      <div
-                        className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="advance.png"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-              
-              <li className="detail mb-[40px] float-left w-1/3 pl-[40px] item__">
-                <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                  <div
-                    className="entry tokyo_tm_portfolio_animation_wrap"
-                    data-title="Progress"
-                    data-category="Detail"
-                  >
-                    <a
-                      className="popup_info"
-                      href="#"
-                      onClick={() => {
-                        setPortfolioDetailsModal(detailData[3]);
-                        modalToggle(true);
-                      }}
-                    >
-                      <img
-                        className="opacity-0 min-w-full"
-                        src="progress.png"
-                        alt="image"
-                      />
-                      <div
-                        className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="progress.png"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-              
-              <li className="detail mb-[40px] float-left w-1/3 pl-[40px] item__">
-                <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                  <div
-                    className="entry tokyo_tm_portfolio_animation_wrap"
-                    data-title="Class News"
-                    data-category="Detail"
-                  >
-                    <a
-                      className="popup_info"
-                      href="#"
-                      onClick={() => {
-                        setPortfolioDetailsModal(detailData[4]);
-                        modalToggle(true);
-                      }}
-                    >
-                      <img
-                        className="opacity-0 min-w-full"
-                        src="classnews.png"
-                        alt="image"
-                      />
-                      <div
-                        className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="classnews.png"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-              
-              <li className="detail mb-[40px] float-left w-1/3 pl-[40px] item__">
-                <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                  <div
-                    className="entry tokyo_tm_portfolio_animation_wrap"
-                    data-title="Today's Weather"
-                    data-category="Detail"
-                  >
-                    <a
-                      className="popup_info"
-                      href="#"
-                      onClick={() => {
-                        setPortfolioDetailsModal(detailData[5]);
-                        modalToggle(true);
-                      }}
-                    >
-                      <img
-                        className="opacity-0 min-w-full"
-                        src="todaysweather.png"
-                        alt="image"
-                      />
-                      <div
-                        className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="todaysweather.png"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
+                    className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                    data-img-url={data.thumbnail}
+                  />
+                </a>
+              </div>
+            </div>
+          </li>
+          })}  
             </ul>
           </div>
         </div>

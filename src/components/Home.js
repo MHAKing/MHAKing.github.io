@@ -40,7 +40,7 @@ const Home = () => {
                 <span>Ali</span>
               </h3>
               <p className="job font-montserrat font-medium max-w-[450px] mb-[25px]">
-              Hi, I am Hassan. I am working as a HTML5 game developer. Currently my duties include developing new games, adding new features, bug fixes and updating games. My English is pre-intermediate.
+              Hi, I am Hassan. I am working as an HTML5 game developer. I make and manage games as well as websites. My English is pre intermediate.
               </p>
               <div className="social w-full float-left">
                 <ul className="m-0 list-none">
